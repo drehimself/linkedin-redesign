@@ -1,0 +1,261 @@
+/***********************************
+* =Variables
+***********************************/
+/***********************************
+* =General
+***********************************/
+a {
+  text-decoration: none;
+  color: #62686E; }
+  a:visited {
+    color: #62686E; }
+
+body {
+  background: #F4F8F9;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  color: #62686E; }
+
+.widget-container {
+  background: white;
+  border: 1px solid #F0F3F5;
+  box-shadow: 0px 2px 5px 0px #ecf0f3; }
+
+.widget-container--no-bg {
+  background: none; }
+
+button {
+  display: block;
+  margin: auto;
+  border-style: none;
+  border: 1px solid #70B4E8;
+  color: #70B4E8;
+  background: white;
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 8px 22px;
+  font-size: 14px;
+  margin-bottom: 10px; }
+
+/***********************************
+* =Navigation
+***********************************/
+header {
+  background: white;
+  margin-bottom: 20px; }
+
+.navigation__top {
+  border-bottom: 1px solid #edeff3;
+  height: 80px; }
+
+.logo {
+  display: inline;
+  border-right: 1px solid #edeff3;
+  float: left;
+  height: 80px; }
+  .logo img {
+    width: 28px;
+    padding-top: 20px;
+    padding-right: 20px; }
+
+.navigation__search {
+  display: inline; }
+
+.navigation__search input {
+  display: inline-block;
+  float: left;
+  width: auto;
+  margin: 20px 20px 0 20px;
+  padding: 10px;
+  border-radius: 18px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #DEE0E4;
+  outline: 0; }
+
+.navigation__main-links {
+  display: inline-block;
+  float: left;
+  height: 80px;
+  border-left: 1px solid #edeff3; }
+  .navigation__main-links li {
+    display: inline-block;
+    height: 100%;
+    padding: 26px 20px; }
+
+.navigation__notifications {
+  display: inline;
+  height: 80px;
+  float: right;
+  border-left: 1px solid #edeff3; }
+  .navigation__notifications li {
+    display: inline-block;
+    padding: 24px 16px 0 16px; }
+  .navigation__notifications .fa {
+    font-size: 22px; }
+  .navigation__notifications .fa-bell {
+    color: #E8AF52; }
+  .navigation__notifications .fa-user-plus {
+    color: #BA85E0; }
+  .navigation__notifications .fa-comment {
+    color: #85B972; }
+
+.navigation__account {
+  display: inline-block;
+  float: right;
+  height: 80px;
+  border-left: 1px solid #edeff3; }
+  .navigation__account .avatar {
+    width: 55px;
+    padding-top: 10px;
+    padding-left: 20px; }
+
+.navigation__user-info {
+  box-shadow: 0px 2px 5px 0px #ecf0f3;
+  padding: 15px; }
+  .navigation__user-info li {
+    display: inline-block;
+    padding-right: 50px; }
+    .navigation__user-info li:not(.active) > a {
+      color: #bec1c5 !important; }
+
+/***********************************
+* =Profile
+***********************************/
+.profile {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.profile__avatar {
+  padding-top: 20px; }
+
+.profile__name {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 10px; }
+
+.profile__title, .profile__area {
+  font-weight: 300;
+  line-height: 1.2; }
+
+.profile__area {
+  color: #A7A9AC; }
+
+.profile__buttons {
+  padding: 20px 0; }
+
+.profile__stats {
+  border-top: 2px solid #edeff3;
+  border-bottom: 2px solid #edeff3; }
+
+.profile__stats__divider {
+  border-right: 2px solid #edeff3; }
+
+.profile__stat {
+  padding: 12px 0; }
+
+.profile__stat__number {
+  font-weight: 600; }
+
+.profile__stat__type {
+  line-height: 1.2;
+  color: #A7A9AC; }
+
+.profile__links, .profile__export {
+  border-bottom: 1px solid #edeff3;
+  padding: 12px 0 12px 22px;
+  text-align: left;
+  font-weight: 300; }
+  .profile__links i.fa, .profile__export i.fa {
+    margin-right: 10px; }
+
+.profile__links a, .profile__export a {
+  color: #A7A9AC; }
+
+/***********************************
+* =People Also Viewed
+***********************************/
+.people-also-viewed {
+  margin-bottom: 20px; }
+
+.people-also-viewed h1 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center; }
+
+.people-also-viewed__item {
+  position: relative;
+  padding: 12px 0; }
+
+.people-also-viewed__image, .people-also-viewed__name, .people-also-viewed__title {
+  float: left; }
+
+.people-also-viewed__image {
+  width: 60px;
+  float: left; }
+
+.people-also-viewed__name {
+  font-weight: 600;
+  padding-left: 8px; }
+
+.people-also-viewed__title {
+  padding-left: 8px;
+  font-size: 14px;
+  color: #A7A9AC;
+  width: 136px;
+  line-height: 1.4; }
+
+.people-also-viewed__plus {
+  position: absolute;
+  right: 10px; }
+  .people-also-viewed__plus .fa-plus-circle {
+    font-size: 20px; }
+
+.people-also-viewed__see-all {
+  text-align: center;
+  margin-top: 8px; }
+  .people-also-viewed__see-all a {
+    color: #00C0EE;
+    text-decoration: underline; }
+    .people-also-viewed__see-all a:hover, .people-also-viewed__see-all a:focus {
+      color: #00abd5; }
+
+/***********************************
+* =More Influencers
+***********************************/
+.more-influencers {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.more-influencers h1 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 300; }
+
+.more-influencers__image {
+  margin-top: 20px;
+  width: 88px; }
+
+.more-influencers__title {
+  color: #A7A9AC; }
+
+/***********************************
+* =Utility
+***********************************/
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.last, .no-padding-right {
+  padding-right: 0; }
+
+/*# sourceMappingURL=app.css.map */

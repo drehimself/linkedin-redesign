@@ -1,0 +1,350 @@
+/***********************************
+* =Variables
+***********************************/
+$nav-border-color: darken(#F6F7F9, 3%);
+$text-color: #62686E;
+$text-color-light: #A7A9AC;
+$nav-height: 80px;
+
+/***********************************
+* =General
+***********************************/
+
+a {
+    text-decoration: none;
+    color: $text-color;
+
+    &:visited {
+        color: $text-color;
+    }
+}
+
+body {
+    background: #F4F8F9;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: $text-color;
+}
+
+.widget-container {
+    background: white;
+    border: 1px solid #F0F3F5;
+    box-shadow: 0px 2px 5px 0px rgba(236,240,243,1);
+}
+
+.widget-container--no-bg {
+    background: none;
+}
+
+button {
+    display: block;
+    margin: auto;
+    border-style: none;
+    border: 1px solid #70B4E8;
+    color: #70B4E8;
+    background: white;
+    border-radius: 16px;
+    cursor: pointer;
+    padding: 8px 22px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/***********************************
+* =Navigation
+***********************************/
+
+header {
+    background: white;
+    margin-bottom: 20px;
+}
+
+.navigation__top {
+    border-bottom: 1px solid $nav-border-color;
+    height: $nav-height;
+}
+
+.logo {
+    display: inline;
+    border-right: 1px solid $nav-border-color;
+    float: left;
+    height: $nav-height;
+
+    img {
+        width: 28px;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+}
+
+.navigation__search {
+    display: inline;
+}
+
+.navigation__search input {
+    display: inline-block;
+    float: left;
+    width: auto;
+    margin: 20px 20px 0 20px;
+    padding: 10px;
+    border-radius: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DEE0E4;
+    outline: 0;
+}
+
+.navigation__main-links {
+    display: inline-block;
+    float: left;
+    height: $nav-height;
+    border-left: 1px solid $nav-border-color;
+
+    & li {
+        display: inline-block;
+        height: 100%;
+        padding: 26px 20px;
+    }
+}
+
+.navigation__notifications {
+    display: inline;
+    height: $nav-height;
+    float: right;
+    border-left: 1px solid $nav-border-color;
+
+    & li {
+        display: inline-block;
+        padding: 24px 16px 0 16px;
+    }
+
+    .fa {
+        font-size: 22px;
+    }
+
+    .fa-bell {
+        color: #E8AF52;
+    }
+
+    .fa-user-plus {
+        color: #BA85E0;
+    }
+
+    .fa-comment {
+        color: #85B972;
+    }
+}
+
+.navigation__account {
+    display: inline-block;
+    float: right;
+    height: $nav-height;
+    border-left: 1px solid $nav-border-color;
+
+    .avatar {
+        width: 55px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+}
+
+.navigation__user-info {
+    box-shadow: 0px 2px 5px 0px rgba(236,240,243,1);
+    padding: 15px;
+
+    li {
+        display: inline-block;
+        padding-right: 50px;
+
+        &:not(.active) > a {
+            color: lighten($text-color, 35%) !important;
+        }
+    }
+
+}
+
+/***********************************
+* =Profile
+***********************************/
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile__avatar {
+    padding-top: 20px;
+}
+
+.profile__name {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.profile__title, .profile__area {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.profile__area {
+    color: $text-color-light;
+}
+
+.profile__buttons {
+    padding: 20px 0;
+}
+
+.profile__stats {
+    border-top: 2px solid $nav-border-color;
+    border-bottom: 2px solid $nav-border-color;
+}
+
+.profile__stats__divider {
+    border-right: 2px solid $nav-border-color;
+}
+
+.profile__stat {
+    padding: 12px 0;
+}
+
+.profile__stat__number {
+    font-weight: 600;
+}
+
+.profile__stat__type {
+    line-height: 1.2;
+    color: $text-color-light;
+}
+
+.profile__links, .profile__export {
+    border-bottom: 1px solid $nav-border-color;
+    padding: 12px 0 12px 22px;
+    text-align: left;
+    font-weight: 300;
+
+    i.fa {
+        margin-right: 10px;
+    }
+}
+
+.profile__links a, .profile__export a {
+    color: $text-color-light;
+}
+
+/***********************************
+* =People Also Viewed
+***********************************/
+
+.people-also-viewed {
+    margin-bottom: 20px;
+}
+
+.people-also-viewed h1 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.people-also-viewed__item {
+    position: relative;
+    padding: 12px 0;
+}
+
+.people-also-viewed__image, .people-also-viewed__name, .people-also-viewed__title {
+    float: left;
+}
+
+.people-also-viewed__image {
+    width: 60px;
+    float: left;
+}
+
+.people-also-viewed__name {
+    font-weight: 600;
+    padding-left: 8px;
+}
+
+.people-also-viewed__title {
+    padding-left: 8px;
+    font-size: 14px;
+    color: $text-color-light;
+    width: 136px;
+    line-height: 1.4;
+}
+
+.people-also-viewed__plus {
+    position: absolute;
+    right: 10px;
+
+    .fa-plus-circle {
+        font-size: 20px;
+    }
+}
+
+.people-also-viewed__see-all {
+    text-align: center;
+    margin-top: 8px;
+
+    a {
+        color: #00C0EE;
+        text-decoration: underline;
+
+        &:hover, &:focus {
+            color: darken(#00C0EE, 5%);
+        }
+    }
+}
+
+/***********************************
+* =More Influencers
+***********************************/
+
+.more-influencers {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.more-influencers h1 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.more-influencers__image {
+    margin-top: 20px;
+    width: 88px;
+}
+
+.more-influencers__title {
+    color: $text-color-light;
+}
+
+.more-influencers__plus {
+
+}
+
+
+/***********************************
+* =Utility
+***********************************/
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.last, .no-padding-right {
+    padding-right: 0;
+}
