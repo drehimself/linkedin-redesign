@@ -36,7 +36,17 @@ button {
   cursor: pointer;
   padding: 8px 22px;
   font-size: 14px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  width: 110px; }
+  button:hover {
+    background: #70B4E8;
+    color: white; }
+
+.button-primary {
+  background: #70B4E8;
+  color: white; }
+  .button-primary:hover {
+    background: #449de1; }
 
 /***********************************
 * =Navigation
@@ -56,11 +66,16 @@ header {
   height: 80px; }
   .logo img {
     width: 28px;
-    padding-top: 20px;
+    padding-top: 23px;
     padding-right: 20px; }
 
 .navigation__search {
-  display: inline; }
+  display: inline;
+  position: relative; }
+  .navigation__search .fa-search {
+    float: left;
+    margin-top: 28px;
+    margin-left: -45px; }
 
 .navigation__search input {
   display: inline-block;
@@ -83,6 +98,8 @@ header {
     display: inline-block;
     height: 100%;
     padding: 26px 20px; }
+  .navigation__main-links a:hover {
+    text-decoration: underline; }
 
 .navigation__notifications {
   display: inline;
@@ -96,10 +113,16 @@ header {
     font-size: 22px; }
   .navigation__notifications .fa-bell {
     color: #E8AF52; }
+    .navigation__notifications .fa-bell:hover, .navigation__notifications .fa-bell:focus {
+      color: #eec47f; }
   .navigation__notifications .fa-user-plus {
     color: #BA85E0; }
+    .navigation__notifications .fa-user-plus:hover, .navigation__notifications .fa-user-plus:focus {
+      color: #d1aeea; }
   .navigation__notifications .fa-comment {
     color: #85B972; }
+    .navigation__notifications .fa-comment:hover, .navigation__notifications .fa-comment:focus {
+      color: #a2ca94; }
 
 .navigation__account {
   display: inline-block;
@@ -110,15 +133,22 @@ header {
     width: 55px;
     padding-top: 10px;
     padding-left: 20px; }
+    .navigation__account .avatar:hover {
+      opacity: 0.75; }
 
 .navigation__user-info {
   box-shadow: 0px 2px 5px 0px #ecf0f3;
-  padding: 15px; }
+  padding: 15px 15px 0 15px; }
   .navigation__user-info li {
     display: inline-block;
-    padding-right: 50px; }
+    margin-right: 20px;
+    padding: 0 20px 15px 20px; }
+    .navigation__user-info li.active {
+      border-bottom: 2px solid #70B4E8; }
     .navigation__user-info li:not(.active) > a {
       color: #bec1c5 !important; }
+      .navigation__user-info li:not(.active) > a:hover {
+        color: #62686E !important; }
 
 /***********************************
 * =Profile
@@ -172,6 +202,8 @@ header {
 
 .profile__links a, .profile__export a {
   color: #A7A9AC; }
+  .profile__links a:hover, .profile__export a:hover {
+    color: #62686E; }
 
 /***********************************
 * =People Also Viewed
@@ -199,6 +231,8 @@ header {
 .people-also-viewed__name {
   font-weight: 600;
   padding-left: 8px; }
+  .people-also-viewed__name:hover {
+    color: #A7A9AC; }
 
 .people-also-viewed__title {
   padding-left: 8px;
@@ -210,6 +244,8 @@ header {
 .people-also-viewed__plus {
   position: absolute;
   right: 10px; }
+  .people-also-viewed__plus:hover {
+    color: #A7A9AC; }
   .people-also-viewed__plus .fa-plus-circle {
     font-size: 20px; }
 
@@ -241,6 +277,12 @@ header {
 .more-influencers__title {
   color: #A7A9AC; }
 
+.more-influencers__plus:hover {
+  color: #A7A9AC; }
+
+/***********************************
+* =Posts
+***********************************/
 /***********************************
 * =Utility
 ***********************************/

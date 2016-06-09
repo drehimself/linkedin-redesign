@@ -4,6 +4,7 @@
 $nav-border-color: darken(#F6F7F9, 3%);
 $text-color: #62686E;
 $text-color-light: #A7A9AC;
+$linkedin-blue: #70B4E8;
 $nav-height: 80px;
 
 /***********************************
@@ -41,14 +42,29 @@ button {
     display: block;
     margin: auto;
     border-style: none;
-    border: 1px solid #70B4E8;
-    color: #70B4E8;
+    border: 1px solid $linkedin-blue;
+    color: $linkedin-blue;
     background: white;
     border-radius: 16px;
     cursor: pointer;
     padding: 8px 22px;
     font-size: 14px;
     margin-bottom: 10px;
+    width: 110px;
+
+    &:hover {
+        background: $linkedin-blue;
+        color: white;
+    }
+}
+
+.button-primary {
+    background: $linkedin-blue;
+    color: white;
+
+    &:hover {
+        background: darken($linkedin-blue, 10%);
+    }
 }
 
 /***********************************
@@ -73,13 +89,20 @@ header {
 
     img {
         width: 28px;
-        padding-top: 20px;
+        padding-top: 23px;
         padding-right: 20px;
     }
 }
 
 .navigation__search {
     display: inline;
+    position: relative;
+
+    .fa-search {
+        float: left;
+        margin-top: 28px;
+        margin-left: -45px;
+    }
 }
 
 .navigation__search input {
@@ -106,6 +129,12 @@ header {
         height: 100%;
         padding: 26px 20px;
     }
+
+    & a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .navigation__notifications {
@@ -125,14 +154,26 @@ header {
 
     .fa-bell {
         color: #E8AF52;
+
+        &:hover, &:focus {
+            color: lighten(#E8AF52, 10%);
+        }
     }
 
     .fa-user-plus {
         color: #BA85E0;
+
+        &:hover, &:focus {
+            color: lighten(#BA85E0, 10%);
+        }
     }
 
     .fa-comment {
         color: #85B972;
+
+        &:hover, &:focus {
+            color: lighten(#85B972, 10%);
+        }
     }
 }
 
@@ -146,19 +187,32 @@ header {
         width: 55px;
         padding-top: 10px;
         padding-left: 20px;
+
+        &:hover {
+            opacity: 0.75;
+        }
     }
 }
 
 .navigation__user-info {
     box-shadow: 0px 2px 5px 0px rgba(236,240,243,1);
-    padding: 15px;
+    padding: 15px 15px 0 15px;
 
     li {
         display: inline-block;
-        padding-right: 50px;
+        margin-right: 20px;
+        padding: 0 20px 15px 20px;
+
+        &.active {
+            border-bottom: 2px solid $linkedin-blue;
+        }
 
         &:not(.active) > a {
             color: lighten($text-color, 35%) !important;
+
+            &:hover {
+                color: $text-color !important;
+            }
         }
     }
 
@@ -231,6 +285,10 @@ header {
 
 .profile__links a, .profile__export a {
     color: $text-color-light;
+
+    &:hover {
+        color: $text-color;
+    }
 }
 
 /***********************************
@@ -265,6 +323,10 @@ header {
 .people-also-viewed__name {
     font-weight: 600;
     padding-left: 8px;
+
+    &:hover {
+        color: $text-color-light;
+    }
 }
 
 .people-also-viewed__title {
@@ -278,6 +340,10 @@ header {
 .people-also-viewed__plus {
     position: absolute;
     right: 10px;
+
+    &:hover {
+        color: $text-color-light;
+    }
 
     .fa-plus-circle {
         font-size: 20px;
@@ -323,8 +389,15 @@ header {
 }
 
 .more-influencers__plus {
-
+    &:hover {
+        color: $text-color-light;
+    }
 }
+
+/***********************************
+* =Posts
+***********************************/
+
 
 
 /***********************************
