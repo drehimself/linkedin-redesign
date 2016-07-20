@@ -19,6 +19,8 @@ body {
 
 .widget-container {
   background: white;
+  padding: 15px 15px 20px;
+  margin-bottom: 20px;
   border: 1px solid #F0F3F5;
   box-shadow: 0px 2px 5px 0px #ecf0f3; }
 
