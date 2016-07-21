@@ -13,6 +13,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.min.css">
     <link rel="stylesheet" href="css/simplegrid.css">
     <link rel="stylesheet" href="css/app.css">
 
@@ -73,7 +74,7 @@
 
     <div class="grid">
         <div class="col-3-12">
-            <div class="profile widget-container">
+            <div class="profile widget-container widget-container--sidebar">
                 <img src="img/bill.png" alt="profle" class="profile__avatar">
                 <div class="profile__name">Bill Gates</div>
                 <div class="profile__title">Microsoft Founder</div>
@@ -171,8 +172,109 @@
 
         <div class="col-9-12 last">
             <div class="posts widget-container">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, harum laboriosam a hic dolores est molestias omnis doloribus commodi, illum dolore sit nisi tempora dolorum aperiam, ullam vel, unde! Delectus laudantium, numquam ut consequuntur, iusto rerum sequi iste repellendus et? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque debitis vel, illo dolores beatae minima laudantium, dolorem iste maxime id neque odit excepturi eum quam ducimus sapiente, veniam adipisci expedita vero ipsa blanditiis quae, rem. Quas, id recusandae nulla temporibus consequatur tempore fugiat ad corporis voluptatum, molestias praesentium, quod earum. At fugiat esse vero possimus distinctio quas, ad ratione quaerat nam officiis reiciendis porro veritatis explicabo in deleniti perferendis provident inventore temporibus et obcaecati, a quasi recusandae rem. Sit voluptatibus, veritatis corrupti ea ex ratione repellendus vel incidunt debitis ipsam optio, ipsa saepe ab sint quos dolores laboriosam, asperiores est?
-            </div>
+                <h1>Posts</h1>
+
+                <div class="posts__carousel">
+                    <div class="carousel-cell">
+                        <a href="#"><img src="img/post1.jpg" alt="post1"></a> <br>
+                        <div class="posts__title"><a href="#">3 Myths That Confuse the D...</a></div>
+                        <div class="posts__date">February 19, 2016</div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <a href="#"><img src="img/post2.jpg" alt="post2"></a> <br>
+                        <div class="posts__title"><a href="#">How Much Do We Spend on...</a></div>
+                        <div class="posts__date">January 21, 2016</div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <a href="#"><img src="img/post3.jpg" alt="post3"></a> <br>
+                        <div class="posts__title"><a href="#">Good News You Might Have...</a></div>
+                        <div class="posts__date">December 30, 2015</div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <a href="#"><img src="img/post1.jpg" alt="post1"></a> <br>
+                        <div class="posts__title"><a href="#">3 Myths That Confuse the D...</a></div>
+                        <div class="posts__date">February 19, 2014</div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <a href="#"><img src="img/post2.jpg" alt="post2"></a> <br>
+                        <div class="posts__title"><a href="#">3 Myths That Confuse the D...</a></div>
+                        <div class="posts__date">February 19, 2014</div>
+                    </div>
+                </div> <!-- end posts__carousel -->
+
+            </div> <!-- end posts -->
+
+            <div class="recommendations widget-container">
+                <h1>Recommendations</h1>
+
+                <div class="recommendations__carousel">
+                    <div class="carousel-cell">
+                        <div class="recommendation">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ex deleniti neque quos ullam quis. Debitis veritatis, doloremque expedita deserunt saepe ipsa facere nisi, sed, aperiam perferendis, tenetur obcaecati nobis!</p>
+                        </div>
+
+                        <img src="img/recommendation1.png" alt="avatar" class="recommendation__img">
+                        <div class="recommendation__person-name">Axel Hermann</div>
+                        <div class="recommendation__company">PatchworkLabs</div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <div class="recommendation">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ex deleniti neque quos ullam quis. Debitis veritatis, doloremque expedita deserunt saepe ipsa facere nisi, sed, aperiam perferendis, tenetur obcaecati nobis!</p>
+                        </div>
+
+                        <img src="img/recommendation2.png" alt="avatar" class="recommendation__img">
+                        <div class="recommendation__person-name">Ilja Miskov</div>
+                        <div class="recommendation__company">Company</div>
+
+                    </div>
+
+                    <div class="carousel-cell">
+                        <div class="recommendation">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ex deleniti neque quos ullam quis. Debitis veritatis, doloremque expedita deserunt saepe ipsa facere nisi, sed, aperiam perferendis, tenetur obcaecati nobis!</p>
+                        </div>
+
+                        <img src="img/recommendation3.png" alt="avatar" class="recommendation__img">
+                        <div class="recommendation__person-name">Mamun Srizon</div>
+                        <div class="recommendation__company">Creative Aliens</div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <div class="recommendation">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ex deleniti neque quos ullam quis. Debitis veritatis, doloremque expedita deserunt saepe ipsa facere nisi, sed, aperiam perferendis, tenetur obcaecati nobis!</p>
+                        </div>
+
+                        <img src="img/recommendation1.png" alt="avatar" class="recommendation__img">
+                        <div class="recommendation__person-name">John Smith</div>
+                        <div class="recommendation__company">Google</div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <div class="recommendation">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ex deleniti neque quos ullam quis. Debitis veritatis, doloremque expedita deserunt saepe ipsa facere nisi, sed, aperiam perferendis, tenetur obcaecati nobis!</p>
+                        </div>
+
+                        <img src="img/recommendation2.png" alt="avatar" class="recommendation__img">
+                        <div class="recommendation__person-name">Jon Snow</div>
+                        <div class="recommendation__company">Nights Watch</div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <div class="recommendation">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ex deleniti neque quos ullam quis. Debitis veritatis, doloremque expedita deserunt saepe ipsa facere nisi, sed, aperiam perferendis, tenetur obcaecati nobis!</p>
+                        </div>
+
+                        <img src="img/recommendation3.png" alt="avatar" class="recommendation__img">
+                        <div class="recommendation__person-name">Walter White</div>
+                        <div class="recommendation__company">Empire Co.</div>
+                    </div>
+                </div> <!-- end recommendations__carousel -->
+
+            </div> <!-- end recommendations -->
 
             <div class="widget-container">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, harum laboriosam a hic dolores est molestias omnis doloribus commodi, illum dolore sit nisi tempora dolorum aperiam, ullam vel, unde! Delectus laudantium, numquam ut consequuntur, iusto rerum sequi iste repellendus et? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque debitis vel, illo dolores beatae minima laudantium, dolorem iste maxime id neque odit excepturi eum quam ducimus sapiente, veniam adipisci expedita vero ipsa blanditiis quae, rem. Quas, id recusandae nulla temporibus consequatur tempore fugiat ad corporis voluptatum, molestias praesentium, quod earum. At fugiat esse vero possimus distinctio quas, ad ratione quaerat nam officiis reiciendis porro veritatis explicabo in deleniti perferendis provident inventore temporibus et obcaecati, a quasi recusandae rem. Sit voluptatibus, veritatis corrupti ea ex ratione repellendus vel incidunt debitis ipsam optio, ipsa saepe ab sint quos dolores laboriosam, asperiores est?
@@ -195,8 +297,29 @@
 
 
 <!-- JavaScript -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 <!-- <script src="js/app.js"></script> -->
+
+<script>
+    (function(){
+
+        $('.posts__carousel').flickity({
+          // options
+          cellAlign: 'left',
+          contain: true,
+          pageDots: false
+        });
+
+        $('.recommendations__carousel').flickity({
+          // options
+          cellAlign: 'left',
+          contain: true,
+          pageDots: false
+        });
+    })();
+
+</script>
 
 </body>
 </html>

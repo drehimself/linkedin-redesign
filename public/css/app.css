@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***********************************
 * =Variables
 ***********************************/
@@ -19,10 +20,19 @@ body {
 
 .widget-container {
   background: white;
-  padding: 15px 15px 20px;
   margin-bottom: 20px;
   border: 1px solid #F0F3F5;
   box-shadow: 0px 2px 5px 0px #ecf0f3; }
+
+.widget-container h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ECEFF2; }
+
+.widget-container--sidebar {
+  padding: 0; }
 
 .widget-container--no-bg {
   background: none; }
@@ -49,6 +59,10 @@ button {
   color: white; }
   .button-primary:hover {
     background: #449de1; }
+
+hr {
+  margin: 0;
+  border-top: 1px solid #F9FBFC; }
 
 /***********************************
 * =Navigation
@@ -285,6 +299,81 @@ header {
 /***********************************
 * =Posts
 ***********************************/
+.posts .posts__carousel {
+  padding: 20px; }
+
+.posts .carousel-cell {
+  width: 33%;
+  height: 330px;
+  /* height of carousel */
+  margin-right: 20px; }
+
+.posts .posts__title {
+  font-size: 18px;
+  font-weight: 600; }
+
+.posts .posts__date {
+  color: #A7A9AC; }
+
+.posts .carousel-cell img {
+  width: 100%; }
+
+/***********************************
+* =Recommendations
+***********************************/
+.recommendations .recommendations__carousel {
+  padding: 20px; }
+
+.recommendations .carousel-cell {
+  width: 31.5%;
+  margin-right: 20px; }
+
+.recommendations .recommendation {
+  border: 1px solid #ECEFF2;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 40px; }
+
+.recommendations .recommendation__img {
+  float: left;
+  width: 60px;
+  margin-right: 14px; }
+
+.recommendations .recommendation__person-name {
+  font-size: 18px;
+  font-weight: 600; }
+
+.recommendations .recommendation__company {
+  font-size: 14px;
+  color: #A7A9AC; }
+
+.recommendations .recommendation:after, .recommendation:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.recommendations .recommendation:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: white;
+  border-width: 20px;
+  margin-left: -20px; }
+
+.recommendations .recommendation:before {
+  border-color: white;
+  border-top-color: #ECEFF2;
+  border-width: 21px;
+  margin-left: -21px; }
+
+.recommendations .recommendation p:before {
+  content: '“ ';
+  font-size: 28px;
+  font-weight: bold; }
+
 /***********************************
 * =Utility
 ***********************************/
