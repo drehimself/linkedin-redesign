@@ -29,6 +29,10 @@ body {
     color: $text-color;
 }
 
+p {
+    margin-bottom: 20px;
+}
+
 .widget-container {
     background: white;
     margin-bottom: 20px;
@@ -65,6 +69,7 @@ button {
     font-size: 14px;
     margin-bottom: 10px;
     width: 110px;
+    outline: none;
 
     &:hover {
         background: $linkedin-blue;
@@ -81,10 +86,19 @@ button {
     }
 }
 
+.button-wider {
+    width: 150px;
+}
+
 hr {
     margin: 0;
     border-top: 1px solid #F9FBFC;
 }
+
+img {
+    max-width: 100%;
+}
+
 /***********************************
 * =Navigation
 ***********************************/
@@ -441,6 +455,67 @@ header {
     width: 100%;
 }
 
+/***********************************
+* =Background
+***********************************/
+
+.background {}
+
+.background .background__container {
+    padding: 20px;
+}
+
+.background h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.background h2 .fa {
+    margin-right: 14px;
+    font-size: 24px;
+}
+
+.background .background__sub-container {
+    padding-left: 36px;
+    margin-bottom: 30px;
+}
+
+// skills
+
+.background .background__skill-list {
+    font-size: 20px;
+}
+
+.background .background__skill-list li {
+    margin: 20px 0 50px;
+}
+
+.background .background__skill-number {
+    border: 1px solid $text-color;
+    border-radius: 50%;
+    padding: 12px 14px;
+    margin-right: 12px;
+}
+
+.background .background__skills img {
+    max-width: 50px;
+    margin-top: -10px;
+}
+
+// interests
+
+.background .background__interest-list {
+    margin-top: 25px;
+}
+
+.background .background__interest-list li {
+    display: inline;
+    background: #f5f8f9;
+    padding: 10px;
+    margin-right: 5px;
+}
+
 
 /***********************************
 * =Recommendations
@@ -483,7 +558,7 @@ header {
 
 .recommendations .recommendation:after, .recommendation:before {
     top: 100%;
-    left: 50%;
+    left: 15%;
     border: solid transparent;
     content: " ";
     height: 0;
@@ -511,12 +586,55 @@ header {
     font-weight: bold;
 }
 
+/***********************************
+* =Following
+***********************************/
+
+.following {}
+
+.following .following__container {
+    padding: 20px 0 20px 20px;
+}
+
+.following__extra {
+    display: none;
+}
+
+.following .following__logo {
+    border: 1px solid $border-color;
+    margin-bottom: 10px;
+}
+
+.following .following__company-name {
+    font-size: 18px;
+}
+
+.following .following__plus {
+    color: $linkedin-blue;
+
+    &:hover {
+        color: darken($linkedin-blue, 7%);
+    }
+}
+
+/***********************************
+* =Footer
+***********************************/
+
+footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid darken($border-color, 3%);
+}
 
 
 
 /***********************************
 * =Utility
 ***********************************/
+
+
 
 .text-center {
     text-align: center;
@@ -534,4 +652,12 @@ header {
 
 .last, .no-padding-right {
     padding-right: 0;
+}
+
+.mr {
+    margin-right: 20px;
+}
+
+.spacer {
+    margin-bottom: 30px;
 }
