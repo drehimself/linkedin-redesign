@@ -363,6 +363,13 @@ header {
   max-width: 50px;
   margin-top: -10px; }
 
+.background .background__skill-avatars-container {
+  float: right; }
+
+.background .background__skill-avatars {
+  float: right;
+  margin-left: 14px; }
+
 .background .background__interest-list {
   margin-top: 25px; }
 
