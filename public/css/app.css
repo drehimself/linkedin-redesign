@@ -370,6 +370,11 @@ header {
   float: right;
   margin-left: 14px; }
 
+.background .background__skill-avatars--number {
+  background: #F4F8F9;
+  border-radius: 20px;
+  padding: 10px 8px; }
+
 .background .background__interest-list {
   margin-top: 25px; }
 

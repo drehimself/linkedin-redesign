@@ -7,6 +7,7 @@ $text-color-light: #A7A9AC;
 $linkedin-blue: #70B4E8;
 $nav-height: 80px;
 $border-color: #ECEFF2;
+$background-color: #F4F8F9;
 
 /***********************************
 * =General
@@ -22,7 +23,7 @@ a {
 }
 
 body {
-    background: #F4F8F9;
+    background: $background-color;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     line-height: 25px;
@@ -481,6 +482,12 @@ header {
     margin-bottom: 30px;
 }
 
+// experience
+
+.background .background__experience__record {
+
+}
+
 // skills
 
 .background .background__skill-list {
@@ -510,6 +517,12 @@ header {
 .background .background__skill-avatars {
     float: right;
     margin-left: 14px;
+}
+
+.background .background__skill-avatars--number {
+    background: $background-color;
+    border-radius: 20px;
+    padding: 10px 8px;
 }
 
 // interests

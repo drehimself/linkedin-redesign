@@ -233,7 +233,17 @@
 
                         <div class="background__sub-container">
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt totam maxime, odit cupiditate dolor veritatis autem eos voluptatum temporibus similique! Illo facere repellat ipsum quia, repudiandae pariatur laudantium, rerum a eaque reiciendis quos expedita culpa ullam nihil qui ratione magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, tempore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum amet neque omnis modi voluptatum, voluptas distinctio maxime aliquid eos itaque?</p>
+                            <div class="background__experience__record" style="float: left">
+                                <div class="background__experience__time">2000 - Present</div>
+                                <div class="background__experience__role">Co-founder, Chairman</div>
+                                <div class="background__experience__company">Microsoft</div>
+                            </div> <!-- end background__experience__record -->
+
+                            <div class="background__experience__logo" style="float: right">
+                                <img src="img/experience1.jpg" alt="logo">
+                            </div>
+
+                            <p style="clear: both">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt totam maxime, odit cupiditate dolor veritatis autem eos voluptatum temporibus similique! Illo facere repellat ipsum quia, repudiandae pariatur laudantium, rerum a eaque reiciendis quos expedita culpa ullam nihil qui ratione magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, tempore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum amet neque omnis modi voluptatum, voluptas distinctio maxime aliquid eos itaque?</p>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis maxime ducimus quis consequatur voluptatem, odio perspiciatis, distinctio reprehenderit voluptas aperiam laboriosam est deleniti corrupti dignissimos. Ab totam illo incidunt repellat porro vero soluta numquam, doloribus, sed nisi minus facere rem!</p>
 
@@ -266,7 +276,7 @@
                                     <span class="background__skill-number">74</span>Social Media Marketing
 
                                     <div class="background__skill-avatars-container">
-                                        <span class="background__skill-avatars">71+</span>
+                                        <span class="background__skill-avatars background__skill-avatars--number">71+</span>
                                         <img src="img/skills2.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills1.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills3.png" alt="avatar" class="background__skill-avatars">
@@ -278,7 +288,7 @@
                                     <span class="background__skill-number">67</span>Web Development
 
                                     <div class="background__skill-avatars-container">
-                                        <span class="background__skill-avatars">64+</span>
+                                        <span class="background__skill-avatars background__skill-avatars--number">64+</span>
                                         <img src="img/skills2.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills1.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills3.png" alt="avatar" class="background__skill-avatars">
@@ -289,7 +299,7 @@
                                     <span class="background__skill-number">25</span>Search Engine Optimization
 
                                     <div class="background__skill-avatars-container">
-                                        <span class="background__skill-avatars">22+</span>
+                                        <span class="background__skill-avatars background__skill-avatars--number">22+</span>
                                         <img src="img/skills2.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills1.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills3.png" alt="avatar" class="background__skill-avatars">
@@ -300,7 +310,7 @@
                                     <span class="background__skill-number">20</span>User Experience Design
 
                                     <div class="background__skill-avatars-container">
-                                        <span class="background__skill-avatars">17+</span>
+                                        <span class="background__skill-avatars background__skill-avatars--number">17+</span>
                                         <img src="img/skills2.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills1.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills3.png" alt="avatar" class="background__skill-avatars">
@@ -577,8 +587,9 @@
         });
 
         $('#see-all').on('click', function() {
+          var $this = $(this);
           $('.following__extra').slideToggle('fast');
-          $(this).text(($(this).text() == 'See All') ? 'Hide' : 'See All');
+          $this.text(($this.text() == 'See All') ? 'Hide' : 'See All');
         });
 
     })();
