@@ -11,11 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.min.css">
-    <link rel="stylesheet" href="css/simplegrid.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,200,300,600,900'>
 
@@ -82,7 +80,7 @@
 
                 <div class="profile__buttons">
                     <button class="button button-primary">Follow</button>
-                    <button class="button button-secondary">Connect</button>
+                    <button class="button button-secondary">Connect <i class="fa fa-chevron-down"></i></button>
                 </div>
 
                 <div class="profile__stats clearfix">
@@ -233,19 +231,28 @@
 
                         <div class="background__sub-container">
 
-                            <div class="background__experience__record" style="float: left">
-                                <div class="background__experience__time">2000 - Present</div>
-                                <div class="background__experience__role">Co-founder, Chairman</div>
-                                <div class="background__experience__company">Microsoft</div>
-                            </div> <!-- end background__experience__record -->
+                            <ul>
+                                <li class="background__experience__record">
+                                    <div class="background__experience__time">2000 - Present</div>
+                                    <div class="background__experience__role">Co-founder, Chairman</div>
+                                    <div class="background__experience__company">Microsoft</div>
+                                </li>
+                                <li class="background__experience__logo">
+                                    <img src="img/experience1.jpg" alt="logo">
+                                </li>
 
-                            <div class="background__experience__logo" style="float: right">
-                                <img src="img/experience1.jpg" alt="logo">
-                            </div>
+                                <li class="background__experience__record">
+                                    <div class="background__experience__time">1992 - 1999</div>
+                                    <div class="background__experience__role">Senior Developer</div>
+                                    <div class="background__experience__company">YouTube</div>
+                                </li>
 
-                            <p style="clear: both">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt totam maxime, odit cupiditate dolor veritatis autem eos voluptatum temporibus similique! Illo facere repellat ipsum quia, repudiandae pariatur laudantium, rerum a eaque reiciendis quos expedita culpa ullam nihil qui ratione magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, tempore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum amet neque omnis modi voluptatum, voluptas distinctio maxime aliquid eos itaque?</p>
+                                <li class="background__experience__logo">
+                                        <img src="img/experience2.jpg" alt="logo">
+                                </li>
+                            </ul>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis maxime ducimus quis consequatur voluptatem, odio perspiciatis, distinctio reprehenderit voluptas aperiam laboriosam est deleniti corrupti dignissimos. Ab totam illo incidunt repellat porro vero soluta numquam, doloribus, sed nisi minus facere rem!</p>
+                        <div class="clearfix"></div>
 
                         </div> <!-- end background__sub-container -->
 
@@ -257,9 +264,28 @@
 
                         <div class="background__sub-container">
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt totam maxime, odit cupiditate dolor veritatis autem eos voluptatum temporibus similique! Illo facere repellat ipsum quia, repudiandae pariatur laudantium, rerum a eaque reiciendis quos expedita culpa ullam nihil qui ratione magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, tempore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum amet neque omnis modi voluptatum, voluptas distinctio maxime aliquid eos itaque?</p>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis maxime ducimus quis consequatur voluptatem, odio perspiciatis, distinctio reprehenderit voluptas aperiam laboriosam est deleniti corrupti dignissimos. Ab totam illo incidunt repellat porro vero soluta numquam, doloribus, sed nisi minus facere rem!</p>
+                            <ul>
+                                <li class="background__experience__record">
+                                    <div class="background__experience__time">1973 - 1975</div>
+                                    <div class="background__experience__role">Harvard University</div>
+                                    <div class="background__experience__company">BS Computer Science</div>
+                                </li>
+                                <li class="background__experience__logo">
+                                    <img src="img/education1.jpg" alt="logo" style="width: 200px">
+                                </li>
+
+                                <li class="background__experience__record">
+                                    <div class="background__experience__time">1960 - 1973</div>
+                                    <div class="background__experience__role">Lakeside School, Seattle</div>
+                                </li>
+
+                                <li class="background__experience__logo">
+                                        <img src="img/education2.jpg" alt="logo" style="width: 150px">
+                                </li>
+                            </ul>
+
+                            <div class="clearfix"></div>
 
                         </div> <!-- end background__sub-container -->
 
@@ -290,8 +316,8 @@
                                     <div class="background__skill-avatars-container">
                                         <span class="background__skill-avatars background__skill-avatars--number">64+</span>
                                         <img src="img/skills2.png" alt="avatar" class="background__skill-avatars">
-                                        <img src="img/skills1.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills3.png" alt="avatar" class="background__skill-avatars">
+                                        <img src="img/skills1.png" alt="avatar" class="background__skill-avatars">
                                     </div>
                                 </li>
 
@@ -300,9 +326,9 @@
 
                                     <div class="background__skill-avatars-container">
                                         <span class="background__skill-avatars background__skill-avatars--number">22+</span>
+                                        <img src="img/skills3.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills2.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills1.png" alt="avatar" class="background__skill-avatars">
-                                        <img src="img/skills3.png" alt="avatar" class="background__skill-avatars">
                                     </div>
                                 </li>
 
@@ -311,8 +337,8 @@
 
                                     <div class="background__skill-avatars-container">
                                         <span class="background__skill-avatars background__skill-avatars--number">17+</span>
-                                        <img src="img/skills2.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills1.png" alt="avatar" class="background__skill-avatars">
+                                        <img src="img/skills2.png" alt="avatar" class="background__skill-avatars">
                                         <img src="img/skills3.png" alt="avatar" class="background__skill-avatars">
                                     </div>
                                 </li>

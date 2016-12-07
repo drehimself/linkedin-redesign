@@ -52,7 +52,7 @@ button {
   padding: 8px 22px;
   font-size: 14px;
   margin-bottom: 10px;
-  width: 110px;
+  width: 120px;
   outline: none; }
   button:hover {
     background: #70B4E8;
@@ -63,9 +63,6 @@ button {
   color: white; }
   .button-primary:hover {
     background: #449de1; }
-
-.button-secondary {
-  width: 140px; }
 
 .button-wider {
   width: 150px; }

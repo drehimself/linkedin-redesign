@@ -4,12 +4,16 @@ var elixir = require('laravel-elixir');
 // elixir.config.viewPath: 'resources/views';
 
 elixir(function(mix) {
-  mix.sass('app.scss');
 
-  // mix.styles([
-  //   'vendor.css',
-  //   'app.css'
-  // ], './public/css/app.css')
+  mix.sass([
+    'app.scss',
+  ], './resources/assets/css');
+
+  mix.styles([
+    'reset.css',
+    'simplegrid.css',
+    'app.css'
+  ], './public/css/style.css')
 
   // mix.scripts([
   //   'first.js',
