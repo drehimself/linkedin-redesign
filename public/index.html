@@ -23,7 +23,18 @@
 </head>
 <body>
 
-    <header>
+    <div class="mobile-navigation-container clearfix">
+        <div class="logo-mobile" ><a href="/"><img src="img/logo.png" alt="logo"></a></div>
+        <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div> <!-- end mobile-navigation-container -->
+
+    <header class="clearfix">
+
         <nav class="navigation">
             <div class="navigation__top">
                 <div class="grid">
@@ -586,7 +597,10 @@
 
 
     <footer>
-        LinkedIn Corporation &copy; 2016
+        <p>
+            Made with <i class="fa fa-heart"></i> by <a href="//andremadarang.com" target="_blank">Andre Madarang</a>. <br>
+            Fork me on <a href="https://github.com/drehimself/linkedin-redesign" target="_blank">GitHub</a>.
+        </p>
     </footer>
 
 
@@ -602,20 +616,27 @@
           // options
           cellAlign: 'left',
           contain: true,
-          pageDots: false
+          pageDots: false,
+          watchCSS: true
         });
 
         $('.recommendations__carousel').flickity({
           // options
           cellAlign: 'left',
           contain: true,
-          pageDots: false
+          pageDots: false,
+          watchCSS: true
         });
 
         $('#see-all').on('click', function() {
           var $this = $(this);
           $('.following__extra').slideToggle('fast');
           $this.text(($this.text() == 'See All') ? 'Hide' : 'See All');
+        });
+
+        $('#nav-icon3').on('click', function() {
+            $(this).toggleClass('open');
+            $('.navigation').slideToggle('fast');
         });
 
     })();

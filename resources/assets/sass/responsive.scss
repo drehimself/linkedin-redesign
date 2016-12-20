@@ -30,6 +30,90 @@
         line-height: 54px;
     }
 
+    .following .following__logo {
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .profile__stats__divider {
+        border-right: none;
+    }
+
+    // mobile nav
+
+    .logo {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+        float: left;
+
+        img {
+            width: 30px;
+            padding-top: 23px;
+            padding-left: 20px;
+            padding: 23px 20px 20px 20px;
+        }
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .mobile-navigation-container {
+        display: block;
+    }
+
+    .navigation__notifications {
+        display: none;
+    }
+
+    .navigation__user-info {
+        padding-left: 0;
+    }
+
+    .navigation__user-info li {
+        display: block;
+        padding: 0 20px 15px 0;
+
+        &.active {
+            border-bottom: none;
+        }
+    }
+
+    .navigation__main-links {
+        border-left: none;
+        float: none;
+        height: auto;
+    }
+
+    .navigation__main-links li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .navigation__top {
+        height: auto;
+    }
+
+    .navigation__search {
+        display: block;
+    }
+
+    .navigation__search input {
+        float: none;
+        margin-left: 0;
+    }
+
+    .navigation__main-links {
+        float: none;
+    }
+
+    .navigation__account {
+        display: none;
+    }
+
 
 }
 
@@ -42,6 +126,37 @@
     .background .background__experience__logo {
         float: none;
     }
+
+    .background .background__sub-container {
+        padding-left: 0;
+    }
+
+
+    // disable flickity for mobile devices
+    .posts .posts__carousel:after {
+        content: '';
+    }
+
+    .posts .carousel-cell {
+        width: auto;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    // disable flickity for mobile devices
+    .recommendations .recommendations__carousel:after {
+        content: '';
+    }
+
+    .recommendations .carousel-cell {
+        width: auto;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+
 
 
 }
