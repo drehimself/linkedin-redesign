@@ -1,0 +1,52 @@
+ /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    .background .background__skills img {
+        max-width: 50px;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .background .background__skill-avatars {
+        float: none;
+    }
+
+    .background .background__skill-avatars-container {
+        float: none;
+        margin-top: 26px;
+    }
+
+    .background .background__skill-number {
+        line-height: 54px;
+    }
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .background .background__experience__record {
+        margin-bottom: 6px;
+    }
+
+    .background .background__experience__logo {
+        float: none;
+    }
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

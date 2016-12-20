@@ -7,12 +7,14 @@ elixir(function(mix) {
 
   mix.sass([
     'app.scss',
+    'responsive.scss',
   ], './resources/assets/css');
 
   mix.styles([
     'reset.css',
     'simplegrid.css',
-    'app.css'
+    'app.css',
+    'responsive.css'
   ], './public/css/style.css')
 
   // mix.scripts([
